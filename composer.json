@@ -11,5 +11,12 @@
     ],
     "require":{
         "magento-hackathon/magento-composer-installer":"*"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "git submodule init",
+            "git submodule sync",
+            "git submodule update"
+        ]
     }
 }
