@@ -1,2 +1,5 @@
+# fetch integrated submodules due to missing composer compatibility
+@shell cd $MODULE/lib && git submodule init && git submodule sync && git submodule update
+
 Cm/Cache/Backend/*                 app/code/community/Cm/Cache/Backend/
 lib/*                              lib/
